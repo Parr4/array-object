@@ -149,7 +149,6 @@ function card(type, section, cantidad, part) {
     for (let i = 0; i <= cantidad; i++) {
         section += `
     <article class="card col-3">
-    <p>${location.pathname}</p>
         <img class="card-img-top" src='./statics/${type[i].src}'>
         <div class="card-body">
             <h2 class="card-title">${type[i].nombre} </h2>
@@ -178,7 +177,7 @@ function card(type, section, cantidad, part) {
 
 if (venta !== null) {
     let cantidad = 0
-    if (page !== '/index.html') {
+    if (page !== '/array-object/venta.html') {
         cantidad = propiedades_venta.length - 1
         card(propiedades_venta, ventaSection, cantidad, venta)
     } else {
@@ -188,7 +187,7 @@ if (venta !== null) {
 
 if (alquiler !== null) {
     let cantidad = 0
-    if (page !== '/index.html') {
+    if (page !== '/array-object/venta.html') {
         cantidad = propiedades_alquiler.length - 1
         card(propiedades_alquiler, alquilerSection, cantidad, alquiler)
     } else {
