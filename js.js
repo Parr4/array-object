@@ -149,6 +149,7 @@ function card(type, section, cantidad, part) {
     for (let i = 0; i <= cantidad; i++) {
         section += `
     <article class="card col-3">
+    <p>${location.pathname}</p>
         <img class="card-img-top" src='./statics/${type[i].src}'>
         <div class="card-body">
             <h2 class="card-title">${type[i].nombre} </h2>
