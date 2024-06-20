@@ -177,7 +177,7 @@ function card(type, section, cantidad, part) {
 
 if (venta !== null) {
     let cantidad = 0
-    if (page !== '/array-object/venta.html') {
+    if (page !== '/array-object/index.html') {
         cantidad = propiedades_venta.length - 1
         card(propiedades_venta, ventaSection, cantidad, venta)
     } else {
@@ -187,7 +187,7 @@ if (venta !== null) {
 
 if (alquiler !== null) {
     let cantidad = 0
-    if (page !== '/array-object/venta.html') {
+    if (page !== '/array-object/index.html') {
         cantidad = propiedades_alquiler.length - 1
         card(propiedades_alquiler, alquilerSection, cantidad, alquiler)
     } else {
