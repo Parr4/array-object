@@ -139,6 +139,7 @@ const propiedades_alquiler = [
         pets: false
     }
 ]
+console.log(location.pathname)
 let page = location.pathname
 let ventaSection = '';
 let alquilerSection = '';
